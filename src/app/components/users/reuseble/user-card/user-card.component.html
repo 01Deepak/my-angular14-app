@@ -1,0 +1,11 @@
+<div *ngIf="user" class="card">
+    <img [src]="user.image" alt="{{ user.firstName }}" class="card-image" />
+    <div class="card-content">
+      <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Age:</strong> {{ user.age }}</p>
+      <p><strong>Phone:</strong> {{ user.phone }}</p>
+      <button class="view-button" (click)="viewDetails()">View Details</button>
+    </div>
+  </div>
+  
