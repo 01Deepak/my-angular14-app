@@ -11,6 +11,8 @@ import { UsersComponent } from './components/users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserCardComponent } from './components/users/reuseble/user-card/user-card.component';
 import { CommonModule } from '@angular/common';
+import { NoPageComponent } from './components/no-page/no-page.component';
+import { UserDetailsComponent } from './components/users/reuseble/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     UsersComponent,
     UserCardComponent,
+    NoPageComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
