@@ -1,0 +1,19 @@
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+  }
+  
+  .card-img-top {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem;
+  }

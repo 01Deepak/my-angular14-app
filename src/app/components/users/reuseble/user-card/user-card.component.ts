@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-card',
@@ -8,10 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UserCardComponent implements OnInit {
   @Input() user: any
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  viewDetails() {
-    console.log("clicked");
+  viewDetails(userId: any) {
+    console.log("id = ",userId);
+    this.router.navigate(['users', userId])
   }
 
   ngOnInit(): void {
